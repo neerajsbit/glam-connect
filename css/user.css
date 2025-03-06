@@ -1,0 +1,293 @@
+
+        body {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            font-family: "Open Sans", sans-serif;
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(https://www.salongold.co.uk/wp-content/uploads/2019/03/Salon-insurance-101-everything-you-need-to-know-1920x640.jpg) no-repeat center center/cover;
+            background-attachment: fixed;
+            margin: 0;     
+        }
+
+        /* Navbar Styles */
+        .navbar {     
+            background-color: transparent;
+            overflow: hidden;
+            padding: 10px 20px;
+            width: 100%;
+            box-sizing: border-box;
+            position: fixed;
+            top: 0;
+            z-index: 1;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        /* Search Box Styles */
+        .search-box input[type="text"] {
+            padding: 10px 20px;
+            background-color: #fff;
+            border: none;
+            border-radius: 20px;
+            font-size: 16px;
+            outline: none;
+            margin-right: 10px;
+            width: 200px;
+            box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
+        }
+
+        .search-box button {
+            padding: 10px 15px;
+            background-color: #6c63ff;
+            color: #fff;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+            outline: none;
+        }
+
+        .search-box button:hover {
+            background-color: #5149de;
+        }
+
+        /* Header */
+        #header {
+            width: 300px;
+            transition: all 0.5s ease-in-out;
+            z-index: 9997;
+            padding: 20px;
+            background: #222;
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        #header .profile {
+            margin-top: 50px;
+            text-align: center;
+        }
+
+        #header .profile img {
+            width: 110px;
+            height: 110px;
+            border-radius: 50%;
+            border: 2px solid #6c63ff;
+        }
+
+        #header .profile h1 {
+            font-size: 24px;
+            color: #fff;
+            margin: 10px 0 0 0;
+        }
+
+        #header .profile h1 a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        #header .nav-menu {
+            width: 100%;
+            text-align: center;
+        }
+
+        #header .nav-menu ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        #header .nav-menu ul li {
+            margin: 20px 0;
+        }
+
+        #header .nav-menu ul li a {
+            color: #a8a9b4;
+            text-decoration: none;
+            display: block;
+            padding: 10px 0;
+            font-size: 16px;
+            transition: color 0.3s ease;
+        }
+
+        #header .nav-menu ul li a:hover {
+            color: #fff;
+        }
+
+        /* Main Content */
+        .main-content {
+            margin-top: 60px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-grow: 1;
+            width: calc(100% -300px);
+            margin-left: 300px;
+            padding: 20px;
+        }
+
+        /* Personal Details */
+        #personaldetails {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 800px;
+        }
+
+        #personaldetails h2 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        #personaldetails label {
+            display: block;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        #personaldetails input[type="text"],
+        #personaldetails input[type="email"],
+        #personaldetails input[type="tel"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border-radius: 20px;
+            border: 1px solid #ccc;
+            font-size: 16px;
+        }
+
+        #personaldetails button {
+            padding: 10px 20px;
+            background-color: #6c63ff;
+            color: #fff;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+            outline: none;
+        }
+
+        #personaldetails button:hover {
+            background-color: #5149de;
+        }
+
+        h2 {
+            color: rgb(115, 115, 117);
+            font-size: 24px;
+            position: relative;
+            top: 4px;
+            left: 39px;
+        }
+
+        .person {
+            width: 110px;
+            height: 110px;
+            border-radius: 20px;
+            position: absolute;
+            left: 29%;
+            top: 12%;
+        }
+
+        #postModal label[for="fileInput"] {
+            background-color: #5149de;
+            color: #ffffff;
+            padding: 9px 10px;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        
+
+      /* Style for request container */
+.request-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    display: none; /* Initially hide the request container */
+    width: calc(100% - 320px); /* Adjust width to fit within main content area */
+    margin-left: 510px; /* Align with main content area */
+    box-sizing: border-box;
+    margin-top: -500px;
+}
+
+.request {
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    background-color: #fff; /* Change background color to match "Post Your Requirements" section */
+    width: 100%; /* Ensure the width matches the container */
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1); /* Add box shadow */
+}
+
+.request h3 {
+    color: #333;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.request p {
+    color: #666;
+    margin-bottom: 5px;
+}
+
+.request .date {
+    color: #999;
+    font-size: 14px;
+}
+
+        /* Increased font size for the "Post your requirements" heading */
+        #personal-details h3 {
+            font-size: 20px;
+            
+            color: #333;
+        }
+        .bookings-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    display: none; /* Initially hide the request container */
+    width: calc(100% - 320px); /* Adjust width to fit within main content area */
+    margin-left: 510px; /* Align with main content area */
+    box-sizing: border-box;
+  
+}
+
+.booking {
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    background-color: #fff; /* Change background color to match "Post Your Requirements" section */
+    width: 100%; /* Ensure the width matches the container */
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1); /* Add box shadow */
+}
+
+.booking h3 {
+    color: #333;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.booking p {
+    color: #666;
+    margin-bottom: 5px;
+}
+
+.booking .date {
+    color: #999;
+    font-size: 14px;
+}
+       

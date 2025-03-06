@@ -1,0 +1,212 @@
+*{
+    margin: 0;
+    padding: 0;
+  }
+ 
+
+    #bg{
+        background-color: antiquewhite;
+    }
+    #logo{
+        clip-path: circle();
+    } 
+   
+
+    #search{
+      padding-left: 450px;
+      padding-top: 70px;
+      margin-right: 500px; 
+    }
+    #search label{
+      font-size: 20px;
+    }
+    #search input{
+      padding: 10px 15px;
+      border-radius: 20px;
+    }
+    #search button{
+      margin-left: 120px;
+      border-radius: 20px;
+    }
+#modal-header1{
+  padding-left: 150px;
+}
+.bgcolor{
+  background: antiquewhite;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+
+.navbar-nav li .active {
+  background: darkgrey;
+}
+
+.dropdown-memu li a:hover{
+background-color:darkgrey; 
+padding: 2px;
+}
+
+
+.bg-black ul{
+list-style: none;
+}
+.bg-black ul li{
+padding: 10px;
+}
+.bg-black li a{
+list-style: none;
+text-decoration:  none;
+color: white;
+}
+
+
+.card-img{ 
+  background:black;
+  opacity: 0.2;
+  }
+  .card-body{
+    background: antiquewhite;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+  
+  }
+
+  .card-img-top{
+     border-top-left-radius: 50px;
+    border-top-right-radius:50px ;
+  }
+  .card-title{
+    background: antiquewhite; 
+  }
+ 
+#cur{
+ border-radius: 30px;
+}
+
+.cur2{
+  border-bottom-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+}
+
+#blur{
+opacity: 0;
+}
+#head{
+font-size: 50px;
+}
+
+.signinform form{
+  width: 350px;
+  margin-left: 29px;
+}
+.signinform input{
+  border-radius: 40px;
+}
+
+
+p {
+font-family: Arial, sans-serif;
+font-size: 18px;
+line-height: 1.6;
+}
+
+
+
+.slider-container {
+  overflow: hidden;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.slider {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  overflow: hidden;
+}
+
+.card1 {
+  flex: 0 0 auto;
+  width: 200px;
+  height: 300px; /* Adjust height as needed */
+  margin-right: 20px;
+  scroll-snap-align: start;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.card1:hover {
+  transform: translateY(-5px);
+}
+
+.card1 img {
+  width: 100%;
+  height: 150px; /* Adjust image height */
+  object-fit: cover;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.card-content {
+  padding: 18px;
+  background-color: #fff;
+}
+
+.card-content h2 {
+  font-size: 18px;
+  margin-bottom: 2px;
+  color: #333;
+}
+
+.card-content p {
+  color: #666;
+}
+.arrow {
+position: absolute;
+top: 50%;
+transform: translateY(-50%);
+width: 40px;
+height: 40px;
+line-height: 40px;
+text-align: center;
+background-color: rgba(0, 0, 0, 0.5);
+color: #fff;
+font-size: 24px;
+cursor: pointer;
+z-index: 1;
+}
+
+.arrow.left {
+left: 10px;
+}
+
+.arrow.right {
+right: 10px;
+}
+
+.city-logo {
+  width: 100px;
+  height: 100px;
+  margin-top: 10px;
+  border-radius: 50%;
+  border: 2px solid #fff; /* Add border */
+  transition: transform 0.3s ease; /* Add transition */
+  cursor: pointer;
+}
+
+.city-logo:hover {
+  transform: scale(1.1); /* Scale on hover */
+}
+
+.city-name {
+  font-size: 20px;
+  margin-top: 5px;
+  color: #fff; /* Change color */
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.5); /* Add text shadow */
+}
+
+
+

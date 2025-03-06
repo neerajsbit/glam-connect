@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+
+    <link rel="stylesheet" type="text/css" href="css/homestyle.css">
+    <link rel="stylesheet" type="text/css" href="css/style1.css">
+    <link rel="stylesheet" type="text/css" href="css/style2.css">
+    <link rel="stylesheet" type="text/css" href="css/contact.css">
+
+
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+    <title>Contact</title>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light" id="bg">
+    <div class="container-fluid">
+      <a  href="#"><img src="images/logo.jpg" alt="" width="50" height="50" id="logo"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="header fs-4 fw-bold">
+        GLAM CONNECT
+      </div>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item ">
+            <a class="nav-link fw-medium " aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link fw-medium" href="aboutus.html">About Us</a>
+          </li>
+          <li class="nav-item fw-bold">
+            <a class="nav-link active" href="contact.html">Contact Us</a>
+          </li>
+          <li class="nav-item dropdown px-5 fw-bold">
+            <a class="nav-link dropdown-toggle" data-bs-auto-close="outside" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Menu 
+            </a>
+            <ul class="dropdown-menu" id="bg">
+              <li><a class="dropdown-item px-5" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">SIGN UP</a></li>
+              <li><a class="dropdown-item px-5" href="#" data-bs-toggle="modal" data-bs-target="#signin">SIGN IN</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+    
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal-dialog modal-dialog-centered">
+  <div class="modal-content" id="cur">
+    <div class="modal-header">
+      <h2 id="modal-header1">SIGN UP</h2>
+      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    </div>
+    <div class="modal-body bgcolor">
+      <div class="container text-center">
+        <div class="row">
+          <div class="col">
+            <i class="bi bi-shop-window" style="font-size:36px"></i>
+            <p >VENDOR</p> <button class="btn btn-primary px-5 rounded-5" data-bs-toggle="modal" data-bs-target="#register">sign up</button>
+          </div>
+          <div class="col">
+            <i class="bi bi-person-circle" style="font-size: 36px;"></i>
+            <p>USER</p> <button class="btn btn-primary px-5 rounded-5"  data-bs-toggle="modal" data-bs-target="#register2">sign up</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+    <div class="modal fade" id="register">
+     <div class="modal-dialog">
+        <div class="modal-content" id="cur">
+          <div class="modal-header">
+            <header>VENDOR SIGN-UP FORM</header>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body bgcolor" id="bg"> 
+            <div class="container2">
+              <form id="form1">
+                 <h3>Basic Info</h3>
+                 <label for="">Business Name</label><br>
+                 <input type="text" placeholder="Enter your Business" required><br>
+                 <label for="">Name</label><br>
+                 <input type="text" placeholder="Enter your Name" required>
+                 <br>
+                 <label for="">PAN or AADHAR</label><br>
+                 <input type="text" placeholder="Enter your PAN or Adhaar" required>
+                 <br>
+                 
+                 <div class="btn-box">
+                 <button type="button" class="btn btn-primary" id="Next1">NEXT</button>
+                 </div>
+               </form><br><br>
+
+               <form id="form2">
+                 <h3>Contact Info</h3>
+                 <label for="">Email Address</label>
+                 <input type="email" placeholder="Enter your Email" required>
+                 <label for="">Phone Number</label>
+                 <input type="number" placeholder="Enter your Phone Number" required>
+                 <br>
+                 <div class="btn-box">
+                   <button type="button" class="btn btn-primary" id="Back1">PREVIOUS</button>
+                 <button type="button" class="btn btn-primary" id="Next2">NEXT</button>
+                 </div>
+               </form>
+ 
+               <form id="form3">
+                 <h3>SERVICE TYPES</h3>
+                 <label for="Service Type">Service Type:</label>
+                 <select id="serviceType" size="1" onchange="toggleDropdowns()" placeholder="Styler" >
+                     <option value="stylists"></option>
+                     <option value="stylists">Stylists</option>
+                     <option value="spaSaloon">Spa & Saloon</option>
+                     <option value="artists">Artists</option>
+                     <option value="consultants">Specialist Consultants</option>
+                 </select><br>
+                 <div id="dropdowns">
+                     <div id="stylistsDropdown" style="display: none;">
+                         <label for="stylistType">Stylist Type:</label>
+                         <select id="stylistType">
+                             <option value="hairStylists">Hair Stylists</option>
+                             <option value="wardrobeArtists">Wardrobe Stylists</option>
+                             <option value="fashionStylists">Fashion Stylists</option>
+                             <option value="weddingStylists">Wedding Stylists</option>
+                             <option value="personalStylists">Personal Stylists</option>
+                             <option value="celebritystylists">Celebrity Stylists</option>
+                             <option value="other">Other</option>
+                         </select>
+                         <label id="stylistOtherLabel" style="display:none;">
+                             <input type="text" id="stylistOtherInput" placeholder="Enter your stylist type">
+                         </label>
+                     </div>
+                     <div id="spaSaloonDropdown" style="display: none;">
+                         <label for="spaService">Spa & Saloon Service:</label>
+                         <select id="spaService">
+                             <option value="barber">Barber</option>
+                             <option value="hairdresser">Hairdresser</option>
+                             <option value="spa">Spa</option>
+                             <option value="therapist">Therapist</option>
+                             <option value="massage">Massage</option>
+                             <option value="other">Other</option>
+                         </select>
+                         <label id="spaOtherLabel" style="display:none;">
+                             <input type="text" id="spaOtherInput" placeholder="Enter your spa service type">
+                         </label>
+                     </div>
+                     <div id="artistsDropdown" style="display: none;">
+                         <label for="artistType">Artist Type:</label>
+                         <select id="artistType">
+                             <option value="makeupartist">Make Up Artist</option>
+                             <option value="tattooartist">Tattoo Artist</option>
+                             <option value="photography">Photography</option>
+                             <option value="other">Other</option>
+                         </select>
+                         <label id="artistOtherLabel" style="display:none;">
+                             <input type="text" id="artistOtherInput" placeholder="Enter your artist type">
+                         </label>
+                     </div>
+                     
+                     <div id="consultantsDropdown" style="display: none;">
+                         <label for="consultantType">Consultant Type:</label>
+                         <select id="consultantType">
+                             <option value="personal">Personal Styling Consultant</option>
+                             <option value="styling">Styling Consultant</option>
+                             <option value="wedding">Wedding Event Consultant</option>
+                             <option value="wardrobe">Wardrobe Consultant</option>
+                             <option value="other">Other</option>
+                         </select>
+                         <label id="consultantOtherLabel" style="display:none;">
+                             <input type="text" id="consultantOtherInput" placeholder="Enter your consultant type">
+                         </label>
+                     </div>
+                 </div>
+                 <br>
+                <div class="btn-box">
+                 <button type="button" class="btn btn-primary" id="Back2">PREVIOUS</button>
+                 <button type="button" class="btn btn-primary" id="Next3">NEXT</button>
+                </div>
+               </form>
+ 
+               <form id="form4">
+                 <h3>Login Details</h3>
+                 <label for="">Create Password</label>
+                 <input type="password" placeholder="Enter your Password" required><br>
+                 <div class="check">
+                   <input type="checkbox" name="agree" required>
+                   I agree to the <a href="#"> Terms & Conditions</a>
+                 </div>
+                <div class="btn-box">
+                 <button type="button" class="btn btn-primary" id="Back3">PREVIOUS</button>
+                 <button type="submit" class="btn btn-primary" >SUBMIT</button>
+                </div>
+               </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="register2">
+      <div class="modal-dialog">
+        <div class="modal-content" id="cur">
+          <div class="modal-header">
+            <header>USER SIGN-UP FORM</header>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body bgcolor" id="bg">
+            <div class="container1"> 
+              <form id="form5">
+                <h3>Basic Info</h3>
+                <label for="">First Name</label><br>
+                <input type="text" placeholder="Enter your First Name" required><br>
+                <label for="">Last Name</label><br>
+                <input type="text" placeholder="Enter your Last Name" required>
+                <br>
+                <div class="btn-box">
+                <button type="button" class="btn btn-primary" id="Next4">NEXT</button>
+                </div>
+              </form><br><br>
+
+              <form id="form6">
+                <h3>Contact Info</h3>
+                <label for="">Email Address</label>
+                <input type="email" placeholder="Enter your Email" required>
+                <label for="">Phone Number</label>
+                <input type="number" placeholder="Enter your Phone Number" required>
+                <br>
+                <div class="btn-box">
+                  <button type="button" class="btn btn-primary" id="Back4">PREVIOUS</button>
+                <button type="button" class="btn btn-primary" id="Next5">NEXT</button>
+                </div>
+              </form>
+
+              <form id="form7">
+                <h3>AGE</h3>
+                <label for="">Age</label>
+                <input type="age" placeholder="Enter Your Age" required>
+                <br>
+                <label for="">Gender</label>
+                <select>
+                  <option>Male</option>
+                  <option>Female</option>
+                  <option>Other</option>
+               </select>
+               <br>
+               <div class="btn-box">
+                <button type="button" class="btn btn-primary" id="Back5">PREVIOUS</button>
+                <button type="button"class="btn btn-primary" id="Next6">NEXT</button>
+               </div>
+              </form>
+
+              <form id="form8">
+                <h3>Login Details:</h3>
+                <label for="">Referral Code</label>
+                <input type="text" id="referral" name="referral"  placeholder="Enter Referal code">
+                <br>
+                <label for="">Create Password</label>
+                <input type="password" placeholder="Enter your Password" required><br>
+                <div class="check">
+                  <input type="checkbox" name="agree" required>
+                  I agree to the <a href="#"> Terms & Conditions</a>
+                </div>
+               <div class="btn-box">
+                <button type="button" class="btn btn-primary" id="Back6">PREVIOUS</button>
+                <button type="submit" class="btn btn-primary" >SUBMIT</button>
+               </div>
+              </form>
+           </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="signin">
+      <div class="modal-dialog">
+        <div class="modal-content" id="cur">
+          <div class="modal-header">
+            <h2 id="modal-header1">SIGN IN </h2>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body bgcolor" id="bg">
+            <div class="signinform" style="  padding: 20px;
+            font-weight: 600;">
+              <form action="signinconnect.php" method="post">
+                  <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Your Email" required>
+                    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Password</label>
+                    <input type="password" class="form-control" placeholder="Enter Password" required>
+                    <div id="passwordHelpBlock" class="form-text">
+                      Your password must be 8-20 characters long, contain letters and numbers, and must not contain spaces, special characters, or emoji.
+                    </div><br>
+                  <div class="mb-3 form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1" required>
+                    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                  </div>
+                  <button type="submit" class="btn btn-lg btn-primary" style="margin-left: 130px; border-radius:40px">Submit</button>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+    <div class="card text-white bg-black">
+      <img src="images/backgrnd2.jpg" class="card-img bg-light" alt="back" height="1200">
+      <div class="card-img-overlay" style="margin: 0; padding:0;">
+        <div class="page-header">
+          <div class="container">
+              <div class="row">
+                  <div class="col-12">
+                      <h2>Contact</h2>
+                  </div>
+                  <div class="col-12">
+                      <a href="index.html">Home</a>
+                      <a href="contact.html">Contact</a>
+                  </div>
+              </div>
+            </div>
+         </div>
+         <div class="contact">
+          <div class="container">
+              <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
+                  <p>Get In Touch</p>
+                  <h2>For Any Query</h2>
+              </div><br>
+              <div class="row">
+                  <div class="col-12">
+                      <div class="row">
+                          <div class="col-md-4 contact-item wow zoomIn" data-wow-delay="0.2s">
+                              <i class="fa fa-map-marker-alt"></i>
+                              <div class="contact-text">
+                                  <h2>Location</h2>
+                                  <p>123 Street, New York, USA</p>
+                              </div>
+                          </div>
+                          <div class="col-md-4 contact-item wow zoomIn" data-wow-delay="0.4s">
+                              <i class="fa fa-phone-alt"></i>
+                              <div class="contact-text">
+                                  <h2>Phone</h2>
+                                  <p>+012 345 67890</p>
+                              </div>
+                          </div>
+                          <div class="col-md-4 contact-item wow zoomIn" data-wow-delay="0.6s">
+                              <i class="far fa-envelope"></i>
+                              <div class="contact-text">
+                                  <h2>Email</h2>
+                                  <p>info@example.com</p>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+       </div>
+       <div class="container-sm">
+        <form>
+          <div class="mb-3">
+            <label  class="form-label  fs-4 text-white">Name</label>
+            <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Your Name">
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label fs-4">Email address</label>
+            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Your Email">
+            <div id="emailHelp" class="form-text text-white">We'll never share your email with anyone else.</div>
+          </div>
+          <div class="mb-3">
+            <label  class="form-label fs-4">Subject</label>
+            <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Subject">
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label fs-4">Message</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Message"></textarea>
+          </div>
+          <button type="submit" class="btn btn-lg btn-primary" id="btn">Message</button>
+        </form>
+       </div>
+      </div>
+      <footer class="container-fluid bg-black text-white text-center p-2 mt-5">
+        <div class="container bg-black text-center">
+           <div class="row">
+              <div class="col-sm-4">
+                 <h3 class="address_text">Contact Us</h3>
+                 <div class="address_bt p-3">
+                    <ul class="bg-black">
+                       <li>
+                          <a href="#">
+                             <i class="bi bi-geo-alt-fill" aria-hidden="true"></i><span class="padding_left10"> Address : Loram Ipusm</span>
+                          </a>
+                       </li>
+                       <li>
+                          <a href="#">
+                             <i class="bi bi-telephone" aria-hidden="true"></i><span class="padding_left10"> Call : +01 1234567890</span>
+                          </a>
+                       </li>
+                       <li>
+                          <a href="#">
+                             <i class="bi bi-envelope" aria-hidden="true"></i><span class="padding_left10"> Email : demo@gmail.com</span>
+                          </a>
+                       </li>
+                    </ul>
+                 </div>
+              </div>
+              <div class="col-sm-4">
+                 <h3 class="address_text">Gamp Connect</h3><br>
+                 <p class="dummy_text">All type of hairstyles and barber services are available in our application</p>
+                 <div class="social_icon">
+                    <i class="bi-instagram p-3" style="font-size:36px"></i>
+                    <i class="bi-facebook p-3" style="font-size:36px"></i>
+                    <i class="bi-linkedin p-3" style="font-size:36px"></i>
+                    <i class="bi bi-twitter-x p-3" style="font-size:36px"></i> 
+                 </div>
+              </div>      
+              <div class="col-sm-4">
+                 <div class=" text-center">
+                       <h3 class="address_text">Our Services</h3><br>
+                       <p class="ipsum_text">Stylists<br>Artists <br>SPA & Saloon <br> Specialist consultants</p>
+                 </div>
+              </div>
+        </div><hr>
+        <div class="container p-3">
+           Copyright : 2024 || Develop by : RG 2 IT Solution Pvt Limited
+        </div>
+       </footer>
+    </div>
+
+    
+    <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="js/vendor.js"></script>
+   <script type="text/javascript" src="js/user.js"></script>
+   <script type="text/javascript" src="js/styleroption.js"></script>
+
+</body>
+</html>

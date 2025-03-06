@@ -1,0 +1,89 @@
+
+
+#bgc{
+  background: linear-gradient(rgb(205, 164, 118),rgba(103, 94, 32, 0.6));
+}
+
+.container2{
+  width: 400px;
+  height: 450px;
+  position: relative;
+  left: 30px;
+  overflow: hidden;
+}
+
+.container2 form{
+  width: 350px;
+  position: absolute;
+  top: 20px;
+  left: 10px;
+  transition: 0.5s;
+}
+
+header{
+  font-weight: 500;
+  font-size: 38px;
+}
+
+#bgc2{
+  background: lightgrey;
+}
+h3{
+  text-align: center;
+}
+
+.container2 form label{
+  font-size: 20px;
+  font-weight: 500;
+  padding: 10px;
+}
+
+.container2 form input{
+  width: 100%;
+  padding: 10px 15px;
+  border: 1px solid #000;
+  border-radius: 20px;
+}
+
+.btn-box{
+  width: 100%;
+  margin: 30px auto;
+  text-align: center;
+}
+
+.container2 form button{
+  width: 110px;
+  height: 55px;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+
+
+.container2 form select{
+  width: 100%;
+  padding: 10px 5px;
+}
+
+
+#form2{
+  left: 450px;
+}
+
+#form3{
+  left: 450px;
+}
+
+#form4{
+  left: 450px;
+}
+
+.check input{
+  position: relative;
+  right: 130px;
+  top: 25px;
+}
+.check{
+  text-align: center;
+}
+
